@@ -1,0 +1,33 @@
+<div class="aform">
+    <h2 style="text-align: center;">Post Your Feedback</h2>
+    <table>
+      <tr>
+        <td class="item-label">Select Date:</td>
+        <td>
+          <input type="date" onkeydown="return false" [(ngModel)]="usdate" class="medium-input" />
+        </td>
+      </tr>
+      <tr>
+        <td class="item-label">Feedback:</td>
+        <td>
+          <textarea [(ngModel)]="ufeedback" class="large-input"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td class="item-label">Root Cause:</td>
+        <td>
+          <select [(ngModel)]="ufactor" class="medium-input">
+            <option *ngFor="let x of factors" [style.color]="'black'">{{x}}</option>
+          </select>
+        </td>
+      </tr>
+      
+      <tr>
+        <td colspan="2" style="text-align: center;padding-left: 20px;">
+          <button mat-raised-button color="primary" type="button" (click)="postFeedback()">Post Feedback</button>
+        </td>
+      </tr>
+    </table>
+    <div class="errors">{{ rerror }}</div>
+  </div>
+  

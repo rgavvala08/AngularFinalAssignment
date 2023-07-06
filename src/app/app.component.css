@@ -1,0 +1,20 @@
+#D-Logo{    
+     background-color: #FDF6E3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#dLogo{
+    /* border: 3px solid rgb(30, 108, 176); */
+   max-width: 100px;
+    margin-bottom: 20px;
+    object-fit: fill;
+}
+#projectTitle{
+   font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+}
